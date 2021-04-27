@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+.homePageMain {
+    height: 90vh;
+    width: 100%;
+    background-color: #FFD6D4;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: black;
+    border-bottom: 1mm solid black;
+    border-right: 1mm solid black;
+    border-left: 1mm solid black;
+}
+
+#name {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12vh;
+    font-weight: 700;
+    position: absolute;
+    width: auto;
+    display: inline-block;
+    color: black;
+    top: 45vh;
+    overflow: hidden;
+    border-right: .15em solid #DF7570;
+    white-space: nowrap;
+    margin: 0 auto;
+    display: inline-block;
+    /* letter-spacing: .15em; */
+    animation:
+            typing 2.5s steps(25, end),
+            blink-caret .7s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { max-width: 0 }
+    to { max-width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #DF7570}
+}
+
+.nav-bar {
+    height: 10vh;
+    width: 100%;
+    background: #FAF4F0;
+    border: 1mm solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-bar .nav {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 3vh;
+    text-align: right;
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar #about:hover {
+    text-decoration: underline;
+    text-decoration-color: #F2B611;
+    text-decoration-thickness: 6.5px;
+}
+
+.nav-bar #project:hover {
+    text-decoration: underline;
+    text-decoration-color: #58ABAE;
+    text-decoration-thickness: 6.5px;
+}
+
+#hand {
+    display: inline-block;
+}
+
+.directory {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

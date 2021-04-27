@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Mandali&family=Noto+Sans+HK:wght@300&family=Patrick+Hand&family=Zen+Dots&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+.main {
+    background-color: #E7D8CB;
+    /* #CBE1E7 */
+    height: 190vh;
+    width: 100%;
+    overflow: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border: black;
+    border-bottom: 1mm solid black;
+    border-right: 1mm solid black;
+    border-left: 1mm solid black;
+}
+
+#project-1, #project-2, #project-3 {
+    /* height: 65vw; */
+    width: 55vw;
+    background-color: #FAF4F0;
+    border-radius: 30px;
+    border: black;
+    border-top: 1mm solid black;
+    border-bottom: 1mm solid black;
+    border-right: 1mm solid black;
+    border-left: 1mm solid black;
+    margin-right: 0px;
+    margin-top: 12vh;
+}
+
+#project-4 {
+    /* height: 65vw; */
+    width: 55vw;
+    background-color: #FAF4F0;
+    border-radius: 30px;
+    border: black;
+    border-top: 1mm solid black;
+    border-bottom: 1mm solid black;
+    border-right: 1mm solid black;
+    border-left: 1mm solid black;
+    margin-right: 0px;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+}
+
+#bar-movie {
+    height: 5vh;
+    width: 55vw;
+    border: black;
+    background-color: #E6DAFA;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 25px;
+    border-bottom: 1mm solid black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#bar-fb {
+    height: 5vh;
+    width: 55vw;
+    border: black;
+    background-color: #BADBDD;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 25px;
+    border-bottom: 1mm solid black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#bar-pw {
+    height: 5vh;
+    width: 55vw;
+    border: black;
+    background-color: #DAF4DD;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 25px;
+    border-bottom: 1mm solid black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#bar-art {
+    height: 5vh;
+    width: 55vw;
+    border: black;
+    background-color: #F9F0B7;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 25px;
+    border-bottom: 1mm solid black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 2vh;}
+    100% {bottom: 0;}
+}
+
+#arrow {
+    /* animation: bouncing 1s infinite ease-in-out; */
+    bottom: 0;
+    display: flex;
+    width: 99.1%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #E7D8CB;
+    font-family: 'Mandali', sans-serif;
+    border: black;
+    border-bottom: 1mm solid black;
+    text-decoration: none;
+    /* border-right: 1mm solid black;
+    border-left: 1mm solid black; */
+}
+
+#arrow-bkg {
+    animation: bouncing 1s infinite ease-in-out;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    font-family: 'Mandali', sans-serif;
+}
+
+#arrow p {
+    font-size: 5vh;
+    color: black;
+}
+
+#arrow p:hover {
+    color: white;
+}
+/* 
+#arrow:hover {
+    filter: brightness(90%);
+    height: 5vh;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+} */
+
+.movie, .fb, .pw, .art {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-bottom: 5vh;
+    /* height: 30vw; */
+}
+
+#movie-name, #fb-name, #pw-name, #art-name{
+    font-size: 4vw;
+    letter-spacing: 1vw;
+    font-family: 'Patrick Hand', cursive;
+    margin-top: 5vh;
+    font-weight: bold;
+}
+
+#bar-movie a, #bar-fb a, #bar-pw a, #bar-art a{
+    font-size: 3.7vh;
+    margin-right: 3vh;
+    text-decoration: none;
+}
+
+#movie-match-a, #fb-a, #pw-a, #art-a{
+    margin-right: 1vh !important;
+}
+
+#movie-descript,#fb-descript, #pw-descript, #art-descript p {
+    font-family: 'Noto Sans HK', sans-serif;
+    width: 45vw;
+    overflow: hidden;
+}
+
+#movie-match-a>#movie-match-div { 
+    display: none; 
+}
+
+#movie-match-a:hover>#movie-match-div  { 
+    display: block; 
+}
+
+
+#project-1 .movie:hover { 
+    background-image: url('./movie_match.png');
+    background-size: cover;
+    overflow: hidden;
+}
+
+#project-2 .fb:hover{
+    background-image: url('./fb.png');
+    background-size: cover;
+    overflow: hidden;
+}
+
+#project-3 .pw:hover{
+    background-image: url('./pw.png');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.movie:hover #movie-name{ 
+    opacity: 0;
+}
+
+.movie:hover #movie-descript{ 
+    opacity: 0;
+}
+
+.fb:hover #fb-name{ 
+    opacity: 0;
+}
+
+.fb:hover #fb-descript{ 
+    opacity: 0;
+}
+
+.pw:hover #pw-name{ 
+    opacity: 0;
+}
+
+.pw:hover #pw-descript{ 
+    opacity: 0;
+}
+
+

@@ -1,0 +1,49 @@
+.nav-bar {
+    height: 10vh;
+    width: 100%;
+    background: #FAF4F0;
+    border: black;
+    border-bottom: 1mm solid black;
+    border-right: 1mm solid black;
+    border-left: 1mm solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-bar .nav {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 3vh;
+    text-align: right;
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+/* 
+.nav-bar #home {
+    font-size: 3.5vh;
+} */
+
+.nav-bar #about:hover {
+    text-decoration: underline;
+    text-decoration-color: #F2B611;
+    text-decoration-thickness: 6.5px;
+}
+
+.nav-bar #project:hover {
+    text-decoration: underline;
+    text-decoration-color: #58ABAE;
+    text-decoration-thickness: 6.5px;
+}
+
+#hand {
+    display: inline-block;
+}
+
+.directory {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

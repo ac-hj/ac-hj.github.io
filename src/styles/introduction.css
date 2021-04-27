@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300&family=Patrick+Hand&display=swap');
+main {
+    height: 90vh;
+    width: 100%;
+    margin: 0;
+}
+
+/* Elements for narrower screens */
+/* @media only screen and (max-width: 1024px) {
+    .main-page {
+        height: 90vh;
+        width: 100%;
+        background-color: seashell;
+        font-family: "Verdana", sans-serif;
+        border: black;
+        border-bottom: 1mm solid black;
+        border-right: 1mm solid black;
+        border-left: 1mm solid black;
+        margin: 0px;
+    }
+    #picture {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin: 0;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    #self {
+        height: 20vh;
+        width: 20vh;
+        border-radius: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        border: 0 double #695438;
+    }
+    
+    p {
+        font-size: 1vh;
+        width: 40em;
+        letter-spacing: .30em;
+        line-height: 2vh;
+        text-align: center;
+    }
+
+    #lego {
+        font-size: 1.2vh;
+        width: 40em;
+        letter-spacing: .30vh;
+        line-height: 1vh;
+    }
+
+    #disney {
+        font-size: 1.2vh;
+        width: 40em;
+        letter-spacing: .30em;
+        line-height: 1vh;
+    }
+
+    #learner {
+        font-size: 1.2vh;
+        width: 4vh;
+        letter-spacing: .30em;
+        line-height: 1vh;
+    }
+
+    #hello {
+        font-size: 4vh;
+        font-weight: bold;
+        letter-spacing: .30em;
+        text-align: center;
+        font-family: 'Gloria Hallelujah', cursive;
+    }
+} */
+
+#caption {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+} 
+
+/* Elements for wider screens */
+/* @media only screen and (min-width: 1025px) { */
+
+.main-page {
+    height: 90vh;
+    width: 100%;
+    background-color: #FEE3AD;
+    font-family: "Verdana", sans-serif;
+    border: black;
+    border-bottom: 1mm solid black;
+    border-right: 1mm solid black;
+    border-left: 1mm solid black;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+#caption {
+    height: 50vh;
+    width: 50vw;
+    background-color: #FAF4F0;
+    border-radius: 30px;
+    border: black;
+    border-top: 1mm solid black;
+    border-bottom: 1mm solid black;
+    border-right: 1mm solid black;
+    border-left: 1mm solid black;
+    margin-left: 40px;
+}
+
+#bar {
+    height: 5vh;
+    width: 50vw;
+    border: black;
+    background-color: #F5B199;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 25px;
+    border-bottom: 1mm solid black;
+}
+
+#self {
+    height: 55vh;
+    width: 56vh;
+    border-radius: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    border: 1.5mm double black;
+}
+
+#self:hover {
+    content: url('./drawself1.jpg');
+}
+
+#hello {
+    font-size: 50px;
+    letter-spacing: .30em;
+    font-family: 'Patrick Hand', cursive;
+    margin-top: 5vh;
+}
+
+#lego {
+    font-size: 15px;
+    width: 40em;
+    letter-spacing: .30em;
+    line-height: 5vh;
+}
+
+#disney {
+    font-size: 15px;
+    width: 40em;
+    letter-spacing: .30em;
+    line-height: 5vh;
+}
+
+#learner {
+    font-size: 15px;
+    width: 40em;
+    letter-spacing: .30em;
+    line-height: 5vh;
+}
+
+/* p {
+    width: 40em;
+    letter-spacing: .30em;
+    line-height: 5vh;
+    margin-left: 4em;
+} */
+#descript {
+    height: 20vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#student {
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 3vh;
+    margin-top: 8vh;
+    font-size: 1.5vw;
+}
+/* } */
