@@ -68,6 +68,7 @@ export class NavigationBar extends Component {
                         <Link class="nav" id="about" onClick={() => {this.setState({page: 'aboutme'})}}>about me</Link>
                         <Link class="nav" id="project" onClick={() => {this.setState({page: 'project'})}}>my projects</Link>
                     </div>
+                    {/* <img id="bunny" src={bunny}></img> */}
                 </div>
                 { this.renderPage() }
             </main>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import github from './styles/github2.png';
-import email from './styles/email.png';
+import github from './media/github2.png';
+import email from './media/email.png';
 import './styles/footer.css';
 
 export class Footer extends Component {

@@ -16,8 +16,7 @@ img {
     animation: loadsp 1s both;
     font-size: 2em;
     margin-top: 1em;
-    margin-right: 0.2em;
-    text-align: right;
+    margin-left: 0.09em;
     font-weight: bold;
 }
 

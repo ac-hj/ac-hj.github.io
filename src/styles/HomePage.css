@@ -3,7 +3,8 @@
 .homePageMain {
     height: 90vh;
     width: 100%;
-    background-color: #FFD6D4;
+    /* background-color: #FFD6D4; */
+    background-image: linear-gradient(#FFD6D4 50%, #FEE3AD);
     overflow: auto;
     margin: 0;
     padding: 0;
@@ -18,7 +19,7 @@
 }
 
 #name {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Patrick Hand', cursive;
     font-size: 12vh;
     font-weight: 700;
     position: absolute;
@@ -26,17 +27,41 @@
     display: inline-block;
     color: black;
     top: 45vh;
+    letter-spacing: 0.6vh;
     overflow: hidden;
-    border-right: .15em solid #DF7570;
+    border-right: .15em solid black;
     white-space: nowrap;
     margin: 0 auto;
     display: inline-block;
     /* letter-spacing: .15em; */
     animation:
             typing 2.5s steps(25, end),
-            blink-caret .7s step-end infinite;
+            blink-caret .5s step-end 2, 
+            textgrowth 1.5s 1.5s 1 alternate,
+            slide-up 1.5s 1.5s 1 alternate;
+    animation-fill-mode: forwards; 
 }
 
+@keyframes textgrowth {
+    0% {
+    font-size: 12vh;
+    }
+    100% {
+    font-size: 5vh;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        /* opacity: .25; */
+        top: 45vh;
+    }
+    to {
+
+        /* opacity: 1; */
+        top: 25vh;
+    }
+}
 /* The typing effect */
 @keyframes typing {
     from { max-width: 0 }
@@ -49,6 +74,25 @@
     50% { border-color: #DF7570}
 }
 
+@keyframes bunny-show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,75%,0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
 .nav-bar {
     height: 10vh;
     width: 100%;
@@ -69,7 +113,7 @@
     color: black;
 }
 
-.nav-bar #about:hover {
+/* .nav-bar #about:hover {
     text-decoration: underline;
     text-decoration-color: #F2B611;
     text-decoration-thickness: 6.5px;
@@ -79,7 +123,7 @@
     text-decoration: underline;
     text-decoration-color: #58ABAE;
     text-decoration-thickness: 6.5px;
-}
+} */
 
 #hand {
     display: inline-block;
@@ -90,4 +134,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+#bunny-home {
+    height: 66vh;
+    width: 48vh;
+    position: relative;
+    /* top: 200vh; */
+    bottom: -12vh;
+    overflow-y: hidden;
+    opacity: 0.9;
+    animation:  bunny-show 1.5s 0s 1 alternate, 
+                fadeInUp 1.5s 1.5s 1 alternate;
 }

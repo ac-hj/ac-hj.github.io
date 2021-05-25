@@ -79,7 +79,17 @@ main {
     }
 } */
 
+
 #caption {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+} 
+
+#caption-more {
     display: flex;
     flex-direction: column;
     margin-top: 0;
@@ -95,9 +105,10 @@ main {
     height: 90vh;
     width: 100%;
     background-color: #FEE3AD;
+    /* background-image: linear-gradient(#FEE3AD 40%, #CEBCAB); */
     font-family: "Verdana", sans-serif;
     border: black;
-    border-bottom: 1mm solid black;
+    /* border-bottom: 1mm solid black; */
     border-right: 1mm solid black;
     border-left: 1mm solid black;
     margin: 0px;
@@ -114,89 +125,228 @@ main {
     
 }
 
-#caption {
-    height: 50vh;
-    width: 50vw;
-    background-color: #FAF4F0;
-    border-radius: 30px;
-    border: black;
-    border-top: 1mm solid black;
-    border-bottom: 1mm solid black;
-    border-right: 1mm solid black;
-    border-left: 1mm solid black;
-    margin-left: 40px;
+@media only screen and (max-width: 1024px) {
+    #picture {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 80vh;
+    }
+
+    #caption {
+        height: 40vh;
+        width: 75vw;
+        background-color: #FAF4F0;
+        border-radius: 30px;
+        border: black;
+        border-top: 1mm solid black;
+        border-bottom: 1mm solid black;
+        border-right: 1mm solid black;
+        border-left: 1mm solid black;
+        animation: infinite-spinning 0.3s 0.3s 1 alternate ease-out backwards;
+        margin-top: 40px;
+    }
+
+    #self {
+        height: 60vw;
+        width: 60vw;
+        border-radius: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        border: 1.5mm double black;
+    }
+
+    #bar {
+        height: 4vh;
+        width: 75vw;
+        border: black;
+        background-color: #F5B199;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 25px;
+        border-bottom: 1mm solid black;
+    }
+    
+    
+    
+    #self:hover {
+        content: url('../media/drawself1.jpg');
+    }
+    
+    #hello {
+        font-size: 2.5vh;
+        letter-spacing: .30em;
+        font-family: 'Patrick Hand', cursive;
+        margin-top: 0vh;
+    }
+    
+    #lego {
+        font-size: 15px;
+        width: 40em;
+        letter-spacing: .30em;
+        line-height: 5vh;
+    }
+    
+    #disney {
+        font-size: 15px;
+        width: 40em;
+        letter-spacing: .30em;
+        line-height: 5vh;
+    }
+    
+    #learner {
+        font-size: 15px;
+        width: 40em;
+        letter-spacing: .30em;
+        line-height: 5vh;
+    }
+    
+    /* p {
+        width: 40em;
+        letter-spacing: .30em;
+        line-height: 5vh;
+        margin-left: 4em;
+    } */
+    #descript {
+        height: 22vh;
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    #student {
+        font-family: 'Noto Sans HK', sans-serif;
+        font-size: 2vh;
+        margin-top: 2vh;
+    }
+    /* } */
+    
+    #amazon, #software {
+        font-weight: 1000;
+    }
+        
+}
+@media only screen and (min-width: 1025px) {
+    #caption {
+        height: 50vh;
+        width: 50vw;
+        background-color: #FAF4F0;
+        border-radius: 30px;
+        border: black;
+        border-top: 1mm solid black;
+        border-bottom: 1mm solid black;
+        border-right: 1mm solid black;
+        border-left: 1mm solid black;
+        margin-left: 40px;
+        animation: infinite-spinning 0.3s 0.3s 1 alternate ease-out backwards;
+    }
+
+    #self {
+        height: 55vh;
+        width: 56vh;
+        border-radius: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        border: 1.5mm double black;
+    }
+
+    #picture {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        
+    }
+    
+    #bar {
+        height: 5vh;
+        width: 50vw;
+        border: black;
+        background-color: #F5B199;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 25px;
+        border-bottom: 1mm solid black;
+    }
+    
+    
+    
+    #self:hover {
+        content: url('../media/drawself1.jpg');
+    }
+    
+    #hello {
+        font-size: 50px;
+        letter-spacing: .30em;
+        font-family: 'Patrick Hand', cursive;
+        margin-top: 5vh;
+    }
+    
+    #lego {
+        font-size: 15px;
+        width: 40em;
+        letter-spacing: .30em;
+        line-height: 5vh;
+    }
+    
+    #disney {
+        font-size: 15px;
+        width: 40em;
+        letter-spacing: .30em;
+        line-height: 5vh;
+    }
+    
+    #learner {
+        font-size: 15px;
+        width: 40em;
+        letter-spacing: .30em;
+        line-height: 5vh;
+    }
+    
+    /* p {
+        width: 40em;
+        letter-spacing: .30em;
+        line-height: 5vh;
+        margin-left: 4em;
+    } */
+    #descript {
+        height: 20vh;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #student {
+        font-family: 'Noto Sans HK', sans-serif;
+        margin-top: 8vh;
+        font-size: 1.4vw;
+    }
+    /* } */
+    
+    #amazon, #software {
+        font-weight: 1000;
+    }
 }
 
-#bar {
-    height: 5vh;
-    width: 50vw;
-    border: black;
-    background-color: #F5B199;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 25px;
-    border-bottom: 1mm solid black;
-}
 
-#self {
-    height: 55vh;
-    width: 56vh;
-    border-radius: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    padding-right: 0;
-    border: 1.5mm double black;
-}
+@keyframes infinite-spinning {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    /* 50% {
+        transform: rotate(0deg);
+    } */
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 
-#self:hover {
-    content: url('./drawself1.jpg');
-}
-
-#hello {
-    font-size: 50px;
-    letter-spacing: .30em;
-    font-family: 'Patrick Hand', cursive;
-    margin-top: 5vh;
-}
-
-#lego {
-    font-size: 15px;
-    width: 40em;
-    letter-spacing: .30em;
-    line-height: 5vh;
-}
-
-#disney {
-    font-size: 15px;
-    width: 40em;
-    letter-spacing: .30em;
-    line-height: 5vh;
-}
-
-#learner {
-    font-size: 15px;
-    width: 40em;
-    letter-spacing: .30em;
-    line-height: 5vh;
-}
-
-/* p {
-    width: 40em;
-    letter-spacing: .30em;
-    line-height: 5vh;
-    margin-left: 4em;
-} */
-#descript {
-    height: 20vh;
-    width: 40vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#student {
-    font-family: 'Noto Sans HK', sans-serif;
-    font-size: 3vh;
-    margin-top: 8vh;
-    font-size: 1.5vw;
-}
-/* } */

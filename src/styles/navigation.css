@@ -25,7 +25,7 @@
     font-size: 3.5vh;
 } */
 
-.nav-bar #about:hover {
+/* .nav-bar #about:hover {
     text-decoration: underline;
     text-decoration-color: #F2B611;
     text-decoration-thickness: 6.5px;
@@ -35,7 +35,7 @@
     text-decoration: underline;
     text-decoration-color: #58ABAE;
     text-decoration-thickness: 6.5px;
-}
+} */
 
 #hand {
     display: inline-block;
@@ -46,4 +46,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+#bunny {
+    top: 2vh;
+    height: 9vh;
+    width: 4.7vh;
+    margin-right: 3vh;
 }
