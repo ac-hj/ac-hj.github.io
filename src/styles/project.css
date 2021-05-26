@@ -4,7 +4,7 @@ html {
 }
 
 .main {
-    background-color: rgba(209, 149, 148, 0.7);
+    background-color: rgba(245, 166, 162, 0.8);
     /* #CBE1E7 */
     height: 190vh;
     width: 100%;
@@ -242,7 +242,8 @@ html {
     line-height: 1.6;
     background-color:rgba(0,0,0,0.04);
     border-radius: 30px;
-    padding: 20px;
+    padding: 30px;
+    padding-top: 40px;
 }
 
 #movie-match-a>#movie-match-div { 
@@ -297,41 +298,53 @@ html {
 }
 
 .detail-1 {
-    background-color: rgba(255, 243, 223, 1);
+    /* background-color: #D4D4D4; */
+    /* background-color: rgba(255, 243, 223, 1); */
     display:inline-block;
     width: 19vw;
-    color: #FDB433;
+    /* color: #FDB433; */
     border-radius: 30px;
-    padding: 2px;
-    text-align: center;
+    /* padding: 1.5px; */
+    /* padding-bottom: 2.5px; */
+    /* text-align: center; */
+    /* box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, .2); */
 }
 
 .detail-2 {
-    background-color: rgba(237, 249, 254, 1);
+    /* background-color: rgba(237, 249, 254, 1); */
+    /* background-color: #D4D4D4; */
     display:inline-block;
     width: 42vw;
-    color: #0078FF;
+    /* color: #0078FF; */
     border-radius: 30px;
-    padding: 2px;
-    text-align: center;
+    /* padding: 1.5px; */
+    /* padding-bottom: 2.5px; */
+    /* text-align: center; */
+    /* box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, .2); */
 }
 
 .detail-3 {
-    background-color: rgba(240, 254, 222, 1);
+    /* background-color: rgba(240, 254, 222, 1); */
+    /* background-color: #D4D4D4; */
     display:inline-block;
     width: 50vw;
-    color: #3AA504;
+    /* color: #3AA504; */
     border-radius: 30px;
-    padding: 2px;
-    text-align: center;
+    /* padding: 1.5px;
+    padding-bottom: 2.5px;
+    text-align: center; */
+    /* box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, .2); */
 }
 
 .detail-4 {
-    background-color: rgba(254, 244, 228, 1);
+    /* background-color: rgba(254, 244, 228, 1); */
+    /* background-color: #D4D4D4; */
     display:inline-block;
     width: 19vw;
-    color: #996105;
+    /* color: #996105; */
     border-radius: 30px;
-    padding: 2px;
-    text-align: center;
+    /* padding: 1.5px; */
+    /* padding-bottom: 2.5px; */
+    /* text-align: center; */
+    /* box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, .2); */
 }
