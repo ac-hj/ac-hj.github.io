@@ -146,6 +146,8 @@ main {
         border-left: 1mm solid black;
         animation: infinite-spinning 0.3s 0.3s 1 alternate ease-out backwards;
         margin-top: 40px;
+        animation-delay: 0.5s;
+        cursor: pointer;
     }
 
     #self {
@@ -160,10 +162,10 @@ main {
 
     #bar {
         height: 4vh;
-        width: 75vw;
+        width: 100%;
         border: black;
         background-color: #F5B199;
-        border-top-left-radius: 30px;
+        border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         border-bottom: 1mm solid black;
     }
@@ -241,6 +243,8 @@ main {
         border-left: 1mm solid black;
         margin-left: 40px;
         animation: infinite-spinning 0.3s 0.3s 1 alternate ease-out backwards;
+        animation-delay: 0.5s;
+        cursor: pointer;
     }
 
     #self {
@@ -263,10 +267,10 @@ main {
     
     #bar {
         height: 5vh;
-        width: 50vw;
+        width: 100%;
         border: black;
         background-color: #F5B199;
-        border-top-left-radius: 30px;
+        border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         border-bottom: 1mm solid black;
     }
@@ -350,3 +354,28 @@ main {
     }
   }
 
+  /* .main-page{
+    opacity: 0;
+    transition: 10s opacity;
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }
+ */
+
+@keyframes fadeInUp-3 {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,5%,0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+#picture {
+    /* opacity: 0; */
+    animation: fadeInUp-3 0.5s 0s 1 alternate;
+}

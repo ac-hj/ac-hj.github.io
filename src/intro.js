@@ -14,6 +14,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export class Introduction extends Component {
 
     componentDidMount() {
+        // $(".main-page").addClass('fade-in');
+
         jQuery(function($){
             //Take your div into one js variable
             var div = $("#caption");
@@ -55,10 +57,10 @@ export class Introduction extends Component {
                     <title> Introduction </title>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 </Helmet>
-                <div class="main-page">
+                <div className="main-page">
                     <div id="picture">
                         <img alt="self" id="self" src={selfPic}/>
-                            <div id="caption" class="caption">
+                            <div id="caption" className="caption">
                                 <div name="bar" id="bar">
 
                                 </div>

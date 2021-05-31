@@ -18,12 +18,6 @@ export class NavigationBar extends Component {
         this.handler = this.handler.bind(this);
     }
 
-    // Ensures the components are updated only if the page is set to a diff value
-    // shouldComponentUpdate(nextProps, nextState, nextContext) {
-    //     this.renderPage();
-    //     return (this.state.page === nextState.page);
-    // }
-
     handler(page) {
         this.setState({
             page: page
@@ -61,12 +55,12 @@ export class NavigationBar extends Component {
     render() {
         return (
             <main>
-                 <div class="nav-bar">
-                    <div class="directory">
-                        <Link class="nav" id="home" onClick={() => {this.setState({page: 'home'}, this.render)}}>🏠</Link>
+                 <div className="nav-bar">
+                    <div className="directory">
+                        <Link className="nav" to="" id="home" onClick={() => {this.setState({page: 'home'}, this.render)}}>🏠</Link>
                         {/* <Link onClick={() => {this.setState({page: 'introduction'})}}>Introduction</Link> */}
-                        <Link class="nav" id="about" onClick={() => {this.setState({page: 'aboutme'})}}>about me</Link>
-                        <Link class="nav" id="project" onClick={() => {this.setState({page: 'project'})}}>my projects</Link>
+                        <Link className="nav" to="" id="about" onClick={() => {this.setState({page: 'aboutme'})}}>about me</Link>
+                        <Link className="nav" to="" id="project" onClick={() => {this.setState({page: 'project'})}}>my projects</Link>
                     </div>
                     {/* <img id="bunny" src={bunny}></img> */}
                 </div>

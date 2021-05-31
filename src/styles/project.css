@@ -57,6 +57,7 @@ html {
     border-left: 1mm solid black;
     margin-right: 0px;
     margin-top: 10vh;
+    cursor: pointer;
 }
 
 #project-3 {
@@ -71,6 +72,7 @@ html {
     border-left: 1mm solid black;
     margin-right: 0px;
     margin-top: 10vh;
+    cursor: pointer;
 }
 
 #project-4 {
@@ -87,54 +89,63 @@ html {
     margin-right: 0px;
     margin-top: 10vh;
     margin-bottom: 10vh;
+    cursor: pointer;
 }
 
 #bar-movie {
     height: 5vh;
-    width: 64.3vw;
+    width: 100%;
     border: black;
     background-color: #F9F0B7;
-    border-top-left-radius: 30px;
+    border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom: 1mm solid black;
     display: flex;
     justify-content: flex-end;
+    overflow: hidden;
+    align-items: center;
 }
 
 #bar-fb {
     height: 5vh;
-    width: 64.3vw;
+    width: 100%;
     border: black;
     background-color: #BADBDD;
-    border-top-left-radius: 30px;
+    border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom: 1mm solid black;
     display: flex;
     justify-content: flex-end;
+    overflow: hidden;
+    align-items: center;
 }
 
 #bar-pw {
     height: 5vh;
-    width: 64.3vw;
+    width: 100%;
     border: black;
     background-color: #DAF4DD;
-    border-top-left-radius: 30px;
+    border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom: 1mm solid black;
     display: flex;
     justify-content: flex-end;
+    overflow: hidden;
+    align-items: center;
 }
 
 #bar-art {
     height: 5vh;
-    width: 64.3vw;
+    width: 100%;
     border: black;
     background-color: #D8C5A6;
-    border-top-left-radius: 30px;
+    border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom: 1mm solid black;
     display: flex;
     justify-content: flex-end;
+    overflow: hidden;
+    align-items: center;
 }
 
 @keyframes bouncing {
@@ -209,8 +220,8 @@ html {
     height: 34vh;
 }
 
-#movie-name, #fb-name, #pw-name, #art-name{
-    font-size: 3em;
+#movie-name, #fb-name, #pw-name, #bo-name{
+    font-size: 3.5vw;
     letter-spacing: 1vw;
     font-family: 'Patrick Hand', cursive;
     margin-top: 5vh;
@@ -219,23 +230,23 @@ html {
 }
 
 #bar-movie a, #bar-fb a, #bar-pw a, #bar-art a{
-    font-size: 3.7vh;
+    font-size: 3.3vh;
     margin-right: 3vh;
     text-decoration: none;
+    margin-top: 0.5vh;
 }
 
 #movie-match-a, #fb-a, #pw-a, #art-a{
     margin-right: 1vh !important;
 }
 
-#movie-descript,#fb-descript, #pw-descript, #art-descript {
+#movie-descript,#fb-descript, #pw-descript, #bo-descript {
     font-family: 'Noto Sans HK', sans-serif;
     width: 55vw;
     height:25vh;
     font-size: 0.9em;
-    overflow: hidden;
     margin-top: 4vh;
-    overflow: scroll;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -244,6 +255,7 @@ html {
     border-radius: 30px;
     padding: 30px;
     padding-top: 40px;
+    text-overflow: ellipsis;
 }
 
 #movie-match-a>#movie-match-div { 
@@ -255,47 +267,50 @@ html {
 }
 
 
-#project-4 .movie:hover { 
+/* #project-4:hover { 
     background-image: url('../media/movie_match.png');
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     overflow: hidden;
-}
+} */
 
-#project-2 .fb:hover{
+/* #project-2:hover {
     background-image: url('../media/fb.png');
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     overflow: hidden;
-}
+} */
 
-#project-3 .pw:hover{
+/* #project-3:hover{
     background-image: url('../media/weather.png');
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     overflow: hidden;
-}
+} */
 
-.movie:hover #movie-name{ 
+/* #project-4:hover #movie-name{ 
     opacity: 0;
 }
 
-.movie:hover #movie-descript{ 
+#project-4:hover #movie-descript{ 
+    opacity: 0;
+} */
+
+/* #project-2:hover #fb-name{ 
     opacity: 0;
 }
 
-.fb:hover #fb-name{ 
+#project-2:hover #fb-descript{ 
+    opacity: 0;
+} */
+
+/* #project-3:hover #pw-name{ 
     opacity: 0;
 }
 
-.fb:hover #fb-descript{ 
+#project-3:hover #pw-descript{ 
     opacity: 0;
-}
-
-.pw:hover #pw-name{ 
-    opacity: 0;
-}
-
-.pw:hover #pw-descript{ 
-    opacity: 0;
-}
+} */
 
 .detail-1 {
     /* background-color: #D4D4D4; */
@@ -347,4 +362,42 @@ html {
     /* padding-bottom: 2.5px; */
     /* text-align: center; */
     /* box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, .2); */
+}
+
+.sub-main {
+    height: 190vh;
+    width: 100%;
+    overflow: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+@keyframes fadeInUp-2 {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,0.5%,0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.sub-main {
+    /* opacity: 0; */
+    animation: fadeInUp-2 0.5s 0s 1 alternate;
+}
+
+#instruct {
+    position: absolute;
+    width: 50vh;
+    text-align: center;
+    /* right: 5vw;
+    top: 20vh; */
+    font-family: 'Patrick Hand', cursive;
+    font-size: 3vh;
 }
