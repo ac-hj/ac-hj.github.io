@@ -240,23 +240,7 @@ html {
     margin-right: 1vh !important;
 }
 
-#movie-descript,#fb-descript, #pw-descript, #bo-descript {
-    font-family: 'Noto Sans HK', sans-serif;
-    width: 55vw;
-    height:25vh;
-    font-size: 0.9em;
-    margin-top: 4vh;
-    overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 1.6;
-    background-color:rgba(0,0,0,0.04);
-    border-radius: 30px;
-    padding: 30px;
-    padding-top: 40px;
-    text-overflow: ellipsis;
-}
+
 
 #movie-match-a>#movie-match-div { 
     display: none; 
@@ -291,7 +275,6 @@ html {
 /* #project-4:hover #movie-name{ 
     opacity: 0;
 }
-
 #project-4:hover #movie-descript{ 
     opacity: 0;
 } */
@@ -299,7 +282,6 @@ html {
 /* #project-2:hover #fb-name{ 
     opacity: 0;
 }
-
 #project-2:hover #fb-descript{ 
     opacity: 0;
 } */
@@ -307,7 +289,6 @@ html {
 /* #project-3:hover #pw-name{ 
     opacity: 0;
 }
-
 #project-3:hover #pw-descript{ 
     opacity: 0;
 } */
@@ -316,7 +297,7 @@ html {
     /* background-color: #D4D4D4; */
     /* background-color: rgba(255, 243, 223, 1); */
     display:inline-block;
-    width: 19vw;
+    width: 23vw;
     /* color: #FDB433; */
     border-radius: 30px;
     /* padding: 1.5px; */
@@ -400,4 +381,46 @@ html {
     top: 20vh; */
     font-family: 'Patrick Hand', cursive;
     font-size: 3vh;
+}
+
+@media only screen and (min-width: 1025px) {
+    #movie-descript,#fb-descript, #pw-descript, #bo-descript {
+        font-family: 'Noto Sans HK', sans-serif;
+        width: 55vw;
+        height:25vh;
+        font-size: 0.9em;
+        margin-top: 4vh;
+        overflow-y: hidden;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.6;
+        background-color:rgba(0,0,0,0.04);
+        border-radius: 30px;
+        padding: 30px;
+        padding-top: 40px;
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #movie-descript,#fb-descript, #pw-descript, #bo-descript {
+        font-family: 'Noto Sans HK', sans-serif;
+        width: 55vw;
+        height:25vh;
+        font-size: 0.9em;
+        margin-top: 4vh;
+        overflow-y: scroll;
+        /* display: flex !important;
+        flex-direction: column;
+        justify-content: center; */
+        line-height: 1.6;
+        background-color:rgba(0,0,0,0.04);
+        border-radius: 30px;
+        padding: 30px;
+        padding-top: 40px;
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+    }
 }
