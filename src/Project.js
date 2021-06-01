@@ -175,8 +175,8 @@ export class Project extends Component {
                             <span id="fb-name">PennBook 🗣</span>
                             <div id="fb-descript">
                                 <p id="detail">Final project for NETS212: Scalable and Cloud Computing. A scalable mock-up Facebook web app that users can create/edit their own profiles, upload text/image posts,
-                                make friend requests, chat with their friends live, etc. Took charge of frontend and entire backend logic (database designs + implementation) for posts and ensuring eventual consistency across different users.<br></br> Won Best Project Award (1st) 🏆</p>
-                                <p class="detail-2" id="tech-detail">Tech stack: AWS, jQuery/Ajax, Apache Spark, JavaScript, HTML, CSS, Express, Node</p>
+                                make friend requests, chat with their friends live, etc. Took charge of frontend and entire backend logic (database designs + implementation) for posts and ensuring eventual consistency across different users.</p>
+                                <p class="detail-2" id="tech-detail">Tech stack: AWS, jQuery/Ajax, Apache Spark, JavaScript, HTML, CSS, Express.js, Node.js</p>
                             </div>
                         </div>
                     </div>
