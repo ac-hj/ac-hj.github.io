@@ -158,7 +158,7 @@ export class Project extends Component {
                         <div id="bo-descript">
                             <p id="detail">Final project for CIS545: Big Data Analytics. Used iMDb data to train a model that would predict the success of a movie in the box office
                             based on various features, such as releasing period, actors, directors, etc. Performed data preprocessing, feature engineering, EDA, and modeling.</p>
-                            <p class="detail-1" id="tech-detail">Tech stack: pandas, sklearn, SQL, jsoup</p>
+                            <p class="detail-1" id="tech-detail">Tech stack: Pandas, sklearn, SQL, Beautiful Soup</p>
                         </div>
                     </div>
                 </div>
