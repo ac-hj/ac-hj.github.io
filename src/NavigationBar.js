@@ -5,7 +5,6 @@ import { Introduction } from './intro';
 import { HomePage } from './HomePage';
 import { Project } from './Project';
 import './styles/navigation.css';
-import {Gallery} from './Gallery'
 
 export class NavigationBar extends Component {
 
@@ -40,12 +39,6 @@ export class NavigationBar extends Component {
                 return (
                     <div>
                         <Project page={this.state.page} action={this.handler}/>
-                    </div>
-                )
-            } else if (page == 'gallery') {
-                return (
-                    <div>
-                        <Gallery page={this.state.page}/>
                     </div>
                 )
             }
